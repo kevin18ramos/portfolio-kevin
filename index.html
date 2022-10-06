@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="myscript.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Ramos</title>
+    <link rel="icon" href="Images/iconmonstr-cat-4.svg">
+</head>
+<body>
+ <header>
+    <div class = "container">
+        <nav class = "navigation">
+
+                <a href="#">HOME</a>
+                <a href="#About">ABOUT</a>
+                <a href="#Work">WORK</a>
+                <a href="#Contact">CONTACT</a>    
+            <div id="indicator"></div>
+
+        </nav>
+        
+    </div>
+    <div class = "first-row">
+        <ul class = "words_name">
+            <li>
+              <div class = "word-name">K</div>
+            </li>
+            <li>
+              <div class = "word-name">E</div>
+            </li>
+            <li>
+              <div class = "word-name">V</div>
+            </li>
+            <li>
+              <div class = "word-name">I</div>
+            </li>
+            <li>
+              <div class = "word-name">N</div>
+            </li>
+            <li>
+              <div class = "word-name"></div>
+            </li>
+            <li>
+              <div class = "word-name">R</div>
+            </li>
+            <li>
+              <div class = "word-name">A</div>
+            </li>
+            <li>
+              <div class = "word-name">M</div>
+            </li>
+            <li>
+              <div class = "word-name">O</div>
+            </li>
+            <li>
+              <div class = "word-name">S</div>
+            </li>
+          </ul>
+    </div>  
+ </header>
+ 
+<div class = "background-part" id = "Home">
+    <h2 class = "home-title">Hi I'm Kevin</h2>
+    <p class="home-desc">Currently a student at Base Camp Coding Academy</p>
+</div>
+<div class = "white-space" id = "About">
+    <div class = "about-page">
+        <h2 class = "UT">UT</h2>
+        <h2 class = "ABOUT-FULL">ABOUT</h2>
+        <h2 class = "E">E</h2>
+        <h2 class = "ME-FULL">ME</h2>
+        <p class = "about-desc-mobile">Computers and technology have always interested me. Now with the support of Base Camp Coding Academy, this passion of mine is being pursued.  I am lucky to be in an environment with classmates that push me to create my best work. This experience at base camp has been enlightening, engaging, and <em class="fade-in">unforgettable.</em>  </p>
+        <div class = "box-inside">
+          <p class = "about-desc">Computers and technology have always interested me. Now with the support of Base Camp Coding Academy, this passion of mine is being pursued.  I am lucky to be in an environment with classmates that push me to create my best work. This experience at base camp has been enlightening, engaging, and <em class="fade-in">unforgettable.</em>  </p>
+        </div>
+        
+    </div>
+    <div class = "space-for-text">
+        
+        <h2 class = "ABO">ABO</h2>
+        <h2 class = "M">M</h2>
+    </div>
+    <div class = "space-for-self">
+      <img class = "myself" src="Images/my-self.png">
+    </div>
+</div>
+
+
+
+
+<div class = "work-screen" id = "Work">
+
+  <div class = "sub-for-work"><p>My work</p></div>
+  <div class = "typing-ani">
+    <p class = "work-desc">My <span class = "auto-type"></span></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["work","Projects","Programs"],
+      typeSpeed: 210,
+      backSpeed: 150,
+      loop: true
+
+    })
+  </script>
+  
+  <img class = "rectangle-under0" src="Images/block-static.gif">
+
+  <a class = "python-icon" href = "https://replit.com/@KevinRamos9/Unit-Project-1#main.py" target="_blank"><ion-icon name="logo-python" ></ion-icon></a>
+  <img class = "rectangle-under" src="Images/car-sim.jpg">
+
+  
+  
+  <a class = "html-icon" href = "https://github.com/kevin18ramos/Portfolio" target="_blank"><ion-icon name="logo-html5" ></ion-icon></a>
+  <img class = "rectangle-under1" src="Images/home-page.jpg">
+
+  <a class = "css-icon" href = "https://github.com/kevin18ramos/Portfolio" target="_blank"><ion-icon name="logo-css3" ></ion-icon></a>
+  
+  <img class = "rectangle-under2" src="Images/home-page.jpg">
+ 
+  <div class = "background-under">
+
+    <div class = "box-python"></div>
+      <ion-icon name="logo-python" class = "python-icon-top-left"></ion-icon>
+
+
+
+    <div class = "box-html"></div>
+    <ion-icon name="logo-html5" class = "html-icon-top-left"></ion-icon>
+    
+    <div class = "box-css"></div>
+    <ion-icon name="logo-css3" class = "css-icon-top-left"></ion-icon>
+
+
+  </div>
+
+</div>
+<div class = "contact-screen" id = "Contact">
+  <div class = "left-box">
+    <div class = "box-of-location">
+      <div class="Iam">
+
+        <p>I'm located in Water Valley, MS but you could be</p>
+        <b>
+          <div class="innerIam">
+            in Florida<br /> 
+            in California<br />
+            in New York<br />
+            in Texas<br />
+            anywhere.
+            </div>
+        </b>
+        
+        </div>
+    </div>
+  </div>
+  <div class = "message-place">
+    <form class = "form" action="https://formsubmit.co/kevin.18ramos04@gmail.com" method="POST" >
+      <div class="pageTitle title"><em class="form-me">Send</em> me a message! </div>
+      <div class="secondaryTitle title">Please fill out this form to contact me.</div>
+      <input type="text" class="name formEntry" placeholder="Name" name = "name" required/>
+      <input type="email" class="email formEntry" placeholder="Email" name = "email" required/>
+      <textarea type = "message" class="message formEntry" placeholder="Message" name = "message" required></textarea>
+      <button type = "submit" class="submit formEntry" >Send</button>
+    </form>
+  </div>  
+
+
+</div>
+
+<script>document.querySelector('ion-icon').shadowRoot.childNodes[0].innerText+="path{stroke:black; stroke-width:10})"</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
