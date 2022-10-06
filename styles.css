@@ -930,10 +930,10 @@ li {
     display: none;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:27%;
-    max-width: 800px;
+    max-width: 700px;
   }
 }
 @media only screen and (max-width: 1619px) and (min-width: 1441px) {
@@ -941,10 +941,10 @@ li {
     display: none;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:22%;
-    max-width: 800px;
+    max-width: 700px;
   }
 }
 
@@ -963,10 +963,10 @@ nav a{
   display: none;
 }
 .form{
-  top: 480%;
+  top: 330%;
   right: 0;
   left:23%;
-  max-width: 680px;
+  max-width: 580px;
 }
 
 }
@@ -1011,7 +1011,7 @@ nav a{
     display: none;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:26%;
     max-width: 560px
@@ -1058,7 +1058,7 @@ nav a{
     display: none;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:21%;
   }
@@ -1104,7 +1104,7 @@ nav a{
     display: none;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:21%;
   }
@@ -1145,7 +1145,7 @@ nav a{
     display: none;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:21%;
   }
@@ -1223,7 +1223,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:21%;
   }
@@ -1315,7 +1315,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:21%;
   }
@@ -1407,7 +1407,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 480%;
+    top: 330%;
     right: 0;
     left:16%;
   }
@@ -1499,7 +1499,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 470%;
+    top: 330%;
     right: 0;
     left:13%;
   }
@@ -1595,7 +1595,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 470%;
+    top: 330%;
     right: 0;
     left:7%;
   }
@@ -1689,7 +1689,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 470%;
+    top: 330%;
     right: 0;
     left:7%;
   }
@@ -1785,7 +1785,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 470%;
+    top: 330%;
     right: 0;
     left:7%;
   }
@@ -1880,7 +1880,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 470%;
+    top: 330%;
     right: 0;
     left:0;
   }
@@ -1969,7 +1969,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 472%;
+    top: 330%;
     right: 0;
     left:0;
   }
@@ -2057,7 +2057,7 @@ nav a{
     margin-right: 50%;
   }
   .form{
-    top: 470%;
+    top: 330%;
     right: 0;
     left:0;
   }
