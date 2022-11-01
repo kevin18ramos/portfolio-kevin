@@ -805,7 +805,7 @@ li {
 
 .bottom-screen{
   width: 100%;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   height: 100px;
   background-color: black;
@@ -817,6 +817,7 @@ li {
   justify-self: center;
   font-size: 40px;
   transition: 0.3s;
+  color: #614385;
 }
 .Github{
   grid-column: 2/3;
@@ -824,8 +825,17 @@ li {
   justify-self: center;
   font-size: 40px;
   transition: 0.3s;
+  color: #614385;
 }
-.LinkIn:hover,.Github :hover{
+.Resume{
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: center;
+  font-size: 40px;
+  transition: 0.3s;
+  color: #614385;
+}
+.LinkIn:hover,.Github :hover,.Resume:hover{
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
