@@ -548,20 +548,23 @@ li {
 }
 .pycon:hover ~ .carcon{
   margin-top: 35px;
+  color: #F33A6A;
 }
 .carcon:hover{
   margin-top: 35px;
-  
+  color: #F33A6A;
 }
 .htmlcon:hover ~ .marcuscon{
   margin-top: 35px;
+  color: #F33A6A;
 }
 .csscon:hover ~ .marcuscon{
   margin-top: 35px;
+  color: #F33A6A;
 }
 .marcuscon:hover{
   margin-top: 35px;
-  
+  color: #F33A6A;
 }
 
 
