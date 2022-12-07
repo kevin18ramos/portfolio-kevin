@@ -485,6 +485,8 @@ li {
   align-self: center;
   justify-self: center;
   color:white;
+  transition: 1s;
+  cursor: pointer;
 }
 .javacon{
   width: 80px;
@@ -522,6 +524,7 @@ li {
   align-self: center;
   justify-self: center;
   color:#0CBABA;
+  cursor: pointer;
 }
 
 .cario{
@@ -536,9 +539,23 @@ li {
   justify-self: center;
   color:#0CBABA;
   transition: 1s;
+  cursor: pointer;
 }
-
-.pycon:hover,.csscon:hover,.htmlcon:hover{
+.messagecon{
+  font-size: 60px;
+  grid-row: 3/4;
+  grid-column: 4/5;
+  align-self: center;
+  justify-self: center;
+  color:#0CBABA;
+  transition: 1s;
+  cursor: pointer;
+}
+.msgicon{
+  width: 60px;
+  height: 60px;
+}
+.pycon:hover,.csscon:hover,.htmlcon:hover,.djangocon:hover{
   margin-bottom: 35px;
   -webkit-filter:
     drop-shadow(1px -2px 3px #0CBABA);
@@ -563,6 +580,14 @@ li {
   color: #F33A6A;
 }
 .marcuscon:hover{
+  margin-top: 35px;
+  color: #F33A6A;
+}
+.djangocon:hover ~ .messagecon{
+  margin-top: 35px;
+  color: #F33A6A;
+}
+.messagecon:hover{
   margin-top: 35px;
   color: #F33A6A;
 }
