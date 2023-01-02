@@ -834,50 +834,74 @@ li {
 .bottom-screen{
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   display: grid;
-  height: 100px;
+  height: 150px;
   background-color: black;
   
 }
 .LinkIn{
   grid-column: 1/2;
-  align-self: center;
+  grid-row: 1/2;
+  align-self: flex-end;
   justify-self: center;
   font-size: 40px;
   transition: 0.3s;
-  color: #614385;
+  color: #0CBABA;
+  
+}
+.Linkedintext{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: flex-start;
+  justify-self: center;
+  font-size: 20px;
+  color: #0CBABA;
+  border-top: 2px solid #0CBABA ;
+  padding-top: 15px;
+  text-decoration: none;
 }
 .Github{
   grid-column: 2/3;
-  align-self: center;
+  grid-row: 1/2;
+  align-self: flex-end;
   justify-self: center;
   font-size: 40px;
   transition: 0.3s;
-  color: #614385;
+  color: #0CBABA;
+}
+.Githubtext{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: flex-start;
+  justify-self: center;
+  font-size: 20px;
+  color: #0CBABA;
+  border-top: 2px solid #0CBABA ;
+  padding-top: 15px;
+  text-decoration: none;
 }
 .Resume{
   grid-column: 3/4;
-  align-self: center;
+  grid-row: 1/2;
+  align-self: flex-end;
   justify-self: center;
   font-size: 40px;
   transition: 0.3s;
-  color: #614385;
+  color: #0CBABA;
 }
-.LinkIn:hover,.Github :hover,.Resume:hover{
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
-  color: #614385;
-  -webkit-filter:
-    drop-shadow(2px -2px 3px white)
-    drop-shadow(-2px -2px 3px white )
-    drop-shadow(0px 0px 7px white);
-  filter:
-  drop-shadow(2px -2px 3px white)
-  drop-shadow(-2px -2px 3px white )
-  drop-shadow(0px 0px 7px white);
-  
+.Resumetext{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  align-self: flex-start;
+  justify-self: center;
+  font-size: 20px;
+  color: #0CBABA;
+  border-top: 2px solid #0CBABA ;
+  padding-top: 15px;
+  text-decoration: none;
 }
+
 .bodythank{
   margin: 0;
   padding: 0;
