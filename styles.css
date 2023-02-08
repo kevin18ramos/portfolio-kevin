@@ -10,41 +10,39 @@ body{
   height: 100%;
   
 }
-.container{
-  margin:0 auto;
-  padding-top: 50px;
-  grid-column: 2/3;
-  
 
-}
 header{
   background: #141414;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 2fr ;
-  display: grid;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   z-index: 5;
-
+ 
 }
 .navigation {
-  
+  margin:0 auto;
+  padding-top: 92px;
+  height: 29px;
   display: table;
   margin: 0 auto;
   transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 nav a {
   position: relative;
-  width: 33.333%;
+  width: 20%;
+  font-size: 1.2vw;
   display: table-cell;
+  align-self: center;
+  justify-self: center;
   text-align: center;
   color: #c9c9c9;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  padding: 10px 80px;
+  padding: 10px ;
   transition: 0.2s ease color;
 }
 
@@ -72,48 +70,6 @@ nav a:after {
   height: 4px;
 }
 
-nav a:nth-child(1):before {
-  background-color: #92a2b6 ;
-}
-
-nav a:nth-child(1):after {
-  background-color: #e2e8ec;
-}
-
-nav a:nth-child(2):before {
-  background-color:  rgb(184, 76, 184) ;
-}
-
-nav a:nth-child(2):after {
-  background-color:  #ffffff;
-}
-
-nav a:nth-child(3):before {
-  background-color: #0CBABA;
-}
-
-nav a:nth-child(3):after {
-  background-color: #fff;
-}
-nav a:nth-child(4):before {
-  background-color: #F33A6A;
-}
-
-nav a:nth-child(4):after {
-  background-color: palevioletred;
-}
-
-#indicator {
-  position: absolute;
-  left: 0%;
-  bottom: 0;
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  border-radius: 5px;
-  transition: 0.5s ease left;
-}
-
 nav a:hover {
   color: #fff;
 }
@@ -121,25 +77,6 @@ nav a:hover {
 nav a:hover:before,
 nav a:hover:after {
   transform: scale(3.0);
-}
-
-nav a:nth-child(1):hover ~ #indicator {
-  left: 10.1%;
-  background: linear-gradient(130deg, #92a2b6 , #e2e8ec);
-}
-
-nav a:nth-child(2):hover ~ #indicator {
-  left: 34.6%;
-  background: linear-gradient(130deg, rgb(184, 76, 184), #ffffff);
-}
-
-nav a:nth-child(3):hover ~ #indicator {
-  left: 59.3%;
-  background: linear-gradient(130deg, #0CBABA, #434343);
-}
-nav a:nth-child(4):hover ~ #indicator {
-  left: 85%;
-  background: linear-gradient(130deg, #F33A6A, palevioletred);
 }
 
 
@@ -165,41 +102,16 @@ li {
 
 
 
-.first-row {
-  margin-right: 155px;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  color: #c9c9c9;
-  font-size: 20px;
-  justify-self: center;
-  padding-right: 40%;
-  padding-left: 30%;
-  align-self: center;
-}
 
 
 
-.first-row:hover {
-  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
-    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
-  color: yellow;
-  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-  animation: glow 1.5s linear infinite;
-}
 
-@keyframes glow {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
+
 
 .background-part{
   background: linear-gradient(#09203F , #537895);
   width: 100%;
-  height: 900px;
+  height: 100vh;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   display: grid;
@@ -207,7 +119,7 @@ li {
 .home-title {
   justify-self: center;
   align-self: end;
-  font-size: 4.5rem;
+  font-size: 5vw;
   margin:0;
   padding:0;
   color:white;
@@ -217,7 +129,7 @@ li {
   margin-bottom: 10px;
 }
 .home-desc{
-  font-size: 2rem;
+  font-size: 2vw;
   justify-self: center;
   align-self: start;
   margin:0;
@@ -237,7 +149,7 @@ li {
   grid-template-columns: 1fr 2fr 1fr;
 }
 .about-page{
-  background: linear-gradient(#614385 , #516395);
+  background: #537895;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   width:100%;
@@ -352,7 +264,7 @@ li {
   grid-row: 3/4;
   height: 355px;
   width: 700px;
-  border: black solid 3px;
+  border: white solid 3px;
   justify-self: center;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -392,16 +304,28 @@ li {
 .work-screen{
   margin: 0;
   padding: 0;
-  background: linear-gradient(#434343,#000000);
+  background: #09203F;
   width: 100%;
-  height: 950px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   display: grid;
   padding-top: 70px;
 }
 #Work{
   list-style: none;
+}
+
+.projects-screen{
+    margin: 0;
+  padding: 0;
+  background: #537895;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  padding-top: 90px;
 }
 .sub-for-work{
   padding: 0;
@@ -422,7 +346,7 @@ li {
   padding: 0;
   margin: 0;
   color:white;
-  font-size: 90px;
+  font-size: 5vw;
   font-family: sans-serif;
   align-self: end;
   justify-self: center;
@@ -431,131 +355,121 @@ li {
   text-transform: uppercase;
   z-index: 1;
 }
-.auto-type{
-  color: #0CBABA;
+.work-desc1{
+  padding: 0;
+  margin: 0;
+  color:white;
+  font-size: 5vw;
+  font-family: sans-serif;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1/2;
+  grid-column: 1/7;
+  text-transform: uppercase;
   z-index: 1;
 }
 
 .pycon{
-  font-size: 60px;
+  font-size: 4vw;
   grid-row: 2/3;
   grid-column: 1/2;
   align-self: center;
   justify-self: center;
   color:white;
-  transition: 1s;
+  transition: .2s;
   cursor: pointer;
+  
 }
 
 
 .htmlcon{
-  font-size: 60px;
+  font-size: 4vw;
   grid-row: 2/3;
-  grid-column: 2/3;
+  grid-column: 3/4;
   align-self: center;
   justify-self: center;
   color:white;
-  transition: 1s;
+  transition: .2s;
   cursor: pointer;
 }
 .csscon{
-  font-size: 60px;
-  grid-row: 2/3;
-  grid-column: 3/4;
-  align-self: center;
-  justify-self: center;
-  color:white;
-  transition: 1s;
-  cursor: pointer;
-}
-
-.javascon{
-  font-size: 60px;
-  grid-row: 3/4;
-  grid-column: 3/4;
-  align-self: center;
-  justify-self: center;
-  color:white;
-}
-.djangocon{
-  width: 80px;
-  height: 80px;
-  grid-row: 3/4;
-  grid-column: 1/2;
-  align-self: center;
-  justify-self: center;
-  color:white;
-  transition: 1s;
-  cursor: pointer;
-}
-.javacon{
-  width: 80px;
-  height: 80px;
-  grid-row: 3/4;
-  grid-column: 2/3;
-  align-self: center;
-  justify-self: center;
-  color:white;
-}
-
-.sqlcon{
-  width: 80px;
-  height: 80px;
-  grid-row: 4/5;
-  grid-column: 1/2;
-  align-self: center;
-  justify-self: center;
-  color:white;
-}
-.springcon{
-  width: 60px;
-  height: 60px;
-  grid-row: 4/5;
-  grid-column: 2/3;
-  align-self: center;
-  justify-self: center;
-  color:white;
-}
-
-.carcon{
-  transition: 1s;
-  grid-row: 2/3;
-  grid-column: 4/5;
-  align-self: center;
-  justify-self: center;
-  color:#0CBABA;
-  cursor: pointer;
-}
-
-.cario{
-  width: 60px;
-  height: 60px;
-}
-.marcuscon{
-  font-size: 60px;
+  font-size: 4vw;
   grid-row: 2/3;
   grid-column: 5/6;
   align-self: center;
   justify-self: center;
-  color:#0CBABA;
-  transition: 1s;
+  color:white;
+  transition: .2s;
   cursor: pointer;
 }
-.messagecon{
-  font-size: 60px;
+
+.javascon{
+  font-size: 4vw;
   grid-row: 3/4;
-  grid-column: 4/5;
+  grid-column: 1/2;
   align-self: center;
   justify-self: center;
-  color:#0CBABA;
-  transition: 1s;
+  color:white;
+  padding-bottom: 15px;
   cursor: pointer;
+  transition: .2s;
 }
-.msgicon{
-  width: 60px;
-  height: 60px;
+.djangocon{
+  width: 6vw;
+  height: 6vw;
+  grid-row: 3/4;
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+  cursor: pointer;
+  padding-bottom: 10px;
 }
-.pycon:hover,.csscon:hover,.htmlcon:hover,.djangocon:hover{
+.javacon{
+  width: 5vw;
+  height: 5vw;
+  grid-row: 3/4;
+  grid-column: 5/6;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+}
+
+.sqlcon{
+  width: 6vw;
+  height: 6vw;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+}
+.springcon{
+  width: 3vw;
+  height: 3vw;
+  grid-row: 4/5;
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+}
+.rustcon{
+  width: 4vw;
+  height: 4vw;
+  grid-row: 4/5;
+  grid-column: 5/6;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+.pycon:hover,.csscon:hover,.htmlcon:hover,.djangocon:hover,.javascon:hover,.rustcon:hover{
   margin-bottom: 35px;
   -webkit-filter:
     drop-shadow(1px -2px 3px #0CBABA);
@@ -563,60 +477,344 @@ li {
     drop-shadow(1px -2px 3px #0CBABA);
   
 }
-.pycon:hover ~ .carcon{
-  margin-top: 35px;
-  color: #F33A6A;
-}
-.carcon:hover{
-  margin-top: 35px;
-  color: #F33A6A;
-}
-.htmlcon:hover ~ .marcuscon{
-  margin-top: 35px;
-  color: #F33A6A;
-}
-.csscon:hover ~ .marcuscon{
-  margin-top: 35px;
-  color: #F33A6A;
-}
-.marcuscon:hover{
-  margin-top: 35px;
-  color: #F33A6A;
-}
-.djangocon:hover ~ .messagecon{
-  margin-top: 35px;
-  color: #F33A6A;
-}
-.messagecon:hover{
-  margin-top: 35px;
-  color: #F33A6A;
+
+.carcon{
+  transition: 1s;
+
+  grid-row: 2/3;
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 5vw;
+  padding: 4vh;
+  
 }
 
 
+.marcuscon{
+  font-size: 5vw;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+  cursor: pointer;
+  padding: 4vh;
+  
+}
+.messagecon{
+  font-size: 6vw;
 
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+  cursor: pointer;
+  border: 4.5px solid white;
+  border-radius: 5px;
+  padding: 4vh;
+}
+.triviacon{
+  font-size: 5vw;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+  cursor: pointer;
+  padding: 4vh;
+}
+.managecon{
+  font-size: 5vw;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  transition: .2s;
+  cursor: pointer;
+  padding: 4vh;
+ 
+}
+
+
+.insidecontainer{
+  background: linear-gradient(#09203F , #537895);
+  grid-row: 2/6;
+  grid-column: 4/7;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-right: 3%;
+  height: 50vh;
+  
+  margin-bottom: 5%;
+  
+  
+}
+
+.title_proj{
+  grid-row: 1/2;
+  
+  align-self: center;
+  justify-self: center;
+  color:white;
+  font-size: 2vw;
+  margin: 0;
+  padding-right: 5%;
+    padding-left: 5%;
+}
+.desc_proj{
+  grid-row: 2/3;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  font-size: 1vw;
+  padding-right: 5%;
+    padding-left: 5%;
+  font-family: sans-serif;
+  
+}
+.lang_proj{
+  grid-row: 3/4;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  color:white;
+  font-size: 1vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: sans-serif;
+}
+
+.date_repos{
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1vw;
+  margin: 0;
+}
+.date_cr{
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+  font-family: sans-serif;
+  font-size: 1vw;
+  color:white;
+  margin: 0;
+}
+.cer_click{
+  grid-column: 2/3;
+  
+  align-self: center;
+  justify-self: center;
+  font-family: sans-serif;
+  font-size: 1vw;
+  color: rgb(255, 180, 40);
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* below is contact screen */
+.phoneContactScreen{
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(#F8F9D2,#E8DBFC);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: .1fr 9fr .1fr;
+}
+.form1 {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 480px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  border-top: 5px solid #537895;
+
+}
 .contact-screen{
   width: 100%;
-  height: 900px;
+  height: 100vh;
   background: linear-gradient(#E8DBFC,#F8F9D2);
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 9fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top: 6vh;
 }
+.contactdesc{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  align-self: start;
+  justify-self: center;
+  color:black;
+  font-size: 5vw;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.contactdesc {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #2c4bff; /* the color */
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+.contactdesc:hover {--_p: 100%}
 
-
-
-.left-box{
-  background-color: black;
+.firstbox{
   grid-column: 1/2;
-  width: 90%;
-  height:600px;
+  grid-row: 2/3;
+  align-self: end;
+  justify-self: center;
+  background-color: #09203F;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-radius: 10px;
+  height: 16vh;
+  width: 99%;
+  margin-left: 1vw;
+  transition: .3s;
+  cursor: pointer;
+}
+.contactLinkin{
+  grid-column: 2/3;
+  color: white;
+  font-size: 2vw;
   align-self: center;
-  justify-self: end;
+  justify-self: center;
+  margin: 0;
+}
+.githubcon{
+  grid-column: 4/5;
+  color: white;
+  font-size: 5vw;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  transition: .4s;
 }
 
-.message-place{
-  grid-column: 2/3;
+.secondbox{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: end;
+  justify-self: center;
+  background-color: #09203F;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-radius: 10px;
+  height: 16vh;
+  width: 99%;
+  margin-left: 1vw;
+  transition: .3s;
+  cursor: pointer;
 }
+.linkincon{
+  grid-column: 4/5;
+  color: white;
+  font-size: 5vw;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  transition: .4s;
+}
+.contactGithub{
+  grid-column: 2/3;
+  color: white;
+  font-size: 2vw;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+.thirdbox{
+  grid-column: 1/2;
+  grid-row: 4/5;
+  align-self: end;
+  justify-self: center;
+  background-color: #09203F;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-radius: 10px;
+  height: 16vh;
+  width: 99%;
+  margin-left: 1vw;
+  transition: .3s;
+
+}
+.fourthbox{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  align-self: end;
+  justify-self: center;
+  background-color: #09203F;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-radius: 10px;
+  height: 16vh;
+  width: 99%;
+  margin-left: 1vw;
+  transition: .3s;
+  cursor: pointer;
+}
+.resumecon{
+  grid-column: 4/5;
+  color: white;
+  font-size: 5vw;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  transition: .4s;
+}
+.mailcon{  grid-column: 4/5;
+  width: 5vw;
+  height: 5vw;
+  
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  transition: .4s;}
+.messageLink{
+  grid-column: 1/3;
+  grid-row: 6/7;
+  font-size: 1.3vw;
+  align-self: center;
+  justify-self: center;
+  color: #071220;
+}
+.contactGmail{
+  grid-column: 2/3;
+  color: white;
+  font-size: 2vw;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+
+
+
 .form {
   background: rgb(0, 0, 0);
   box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
@@ -624,76 +822,79 @@ li {
   max-width: 480px;
   padding-top: 5px;
   padding-bottom: 5px;
-  top: 3130px;
-  left: 1300px;
-  right: 0;
-  margin-left: 100px;
-  margin-top: 125px;
-  border-top: 5px solid #F33A6A;
-/*   z-index: 1; */
-  animation: bounce 1.5s infinite;
+  padding-left: 4vh;
+  padding-right: 4.5vh;
+  grid-column: 2/3;
+  grid-row: 2/6;
+  align-self: center;
+  justify-self: center;
+  border-top: 5px solid #537895;
+
 }
 ::-webkit-input-placeholder {
   font-size: 1.3em;
 }
-
-.title{
-  display: block;
-  font-family: sans-serif;
-  margin: 10px auto 5px;
-  width: 320px;
+::selection {
+  background: var(--highlight-color);
 }
+
 
 
 .pageTitle{
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: bold;
-  color:#F33A6A;
+  color:#537895;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
 }
-.secondaryTitle{
-  color: white;
-}
+
 
 .name {
   background-color: #ebebeb;
   color: black;
+  height: 1vh;
+  width: 9vw;
 }
 .name:hover {
-  border-bottom: 5px solid #F33A6A;
-  height: 30px;
-  width: 380px;
+  border-bottom: 5px solid #537895;
+  height: 1.5vh;
+ 
   transition: ease 0.5s;
 }
 
 .email {
   background-color: #ebebeb;
-  height: 2em;
+  height: 1vh;
+  width: 9vw;
 }
 
 .email:hover {
-  border-bottom: 5px solid #F33A6A;
-  height: 30px;
-  width: 380px;
+  border-bottom: 5px solid #537895;
+  height: 1.5vh;
+ 
   transition: ease 0.5s;
 }
 
 .message {
   background-color: #ebebeb;
   overflow: hidden;
-  height: 10rem;
+  height: 9vh;
+  width: 9vw;
+  
 }
 
 .message:hover {
-  border-bottom: 5px solid #F33A6A;
-  height: 12em;
-  width: 380px;
+
+  border-bottom: 5px solid #537895;
+  height: 11vh;
+  
   transition: ease 0.5s;
 }
 
 .formEntry {
   display: block;
   margin: 30px auto;
-  min-width: 300px;
+
   padding: 10px;
   border-radius: 2px;
   border: none;
@@ -701,143 +902,36 @@ li {
 }
 
 .submit {
-  width: 200px;
+  height: 4.5vh;
+  width: 15vh;
   color: white;
-  background-color: #F33A6A;
-  font-size: 20px;
+  background-color: #537895;
+  font-size: 1vw;
 }
 
 .submit:hover {
   
   transform: translateY(-3px);
-  width: 300px;
+  width: 18vh;
   border-top: 5px solid white;
   border-radius: 0%;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translate(0, 4px);
-  }
-  50% {
-    transform: translate(0, 8px);
-  }
-
-
-
-}
-.outline-box{
-  height:550px;
-  width: 990px;
-  border: 5px white solid;
-  position: absolute;
-  left: 137px;
-  top: 3140px;
-}
-.box-of-location{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.Iam {
-  font: normal 40px/50px Montserrat, sans-serif;
-  color: rgb(255, 255, 255);
-  grid-row: 2/3;
-  text-align: center;
-  justify-self: start;
-  font-size: 45px;
-  text-transform: uppercase;
-}
-.Iam p {
-  height: 50px;
-  float: left;
-  margin-right: 2.6em;
-  margin-left: .6em;
-}
-.Iam b {
-  float: left;
-  overflow: hidden;
-  position: relative;
-  height: 50px;
-  top: -43px;
-  left: 670px;
-}
-.Iam .innerIam {
-  display: inline-block;
-  color: #F33A6A;
-  position: relative;
-  white-space: nowrap;
-  top: 0;
-  left: 0;
-
-
-/*animation*/
--webkit-animation:move 5s;
-   -moz-animation:move 5s;
-    -ms-animation:move 5s;
-     -o-animation:move 5s;
-        animation:move 5s;
-/*animation-iteration-count*/
--webkit-animation-iteration-count:infinite;
-   -moz-animation-iteration-count:infinite;
-    -ms-animation-iteration-count:infinite;
-     -o-animation-iteration-count:infinite;
-        animation-iteration-count:infinite;
-/*animation-delay*/
--webkit-animation-delay: 3s;
-   -moz-animation-delay: 3s;
-    -ms-animation-delay: 3s;
-     -o-animation-delay: 3s;
-        animation-delay: 3s;
-}
-@keyframes move{
-0%  { top: 0px; }
-20% { top: -50px; }
-40% { top: -100px; }
-60% { top: -150px; }
-80% { top: -200px; }
-}
-
-@-webkit-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@-moz-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@-o-keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
-@keyframes move {
-    0%  { top: 0px; }
-    20% { top: -50px; }
-    40% { top: -100px; }
-    60% { top: -150px; }
-    80% { top: -200px; }
-}
 
 
 .form-me{
   text-shadow: .5px .5px white;
 }
 
+/* bottom placement display none rn*/
 .bottom-screen{
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  display: grid;
+  display: none;
   height: 150px;
   background-color: black;
+
   
 }
 .LinkIn{
@@ -940,71 +1034,48 @@ li {
 
 
 
-
-@media only screen and (max-width: 1880px) and (min-width: 1783px) {
-  .Iam{
-    font-size: 36px;
-  }
-  .form{
-    left: 1209px;
-  }
-}
-@media only screen and (max-width: 1782px) and (min-width: 1620px) {
-  .left-box{
+@media only screen and (min-width: 1783px)  {
+  .phoneContactScreen{
     display: none;
   }
-  .form{
-    margin-left: 30%;
-    max-width: 700px;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+
 }
+@media only screen and (max-width: 1782px) and (min-width: 1620px) {
+  .phoneContactScreen{
+    display: none;
+  }
 
 }
 @media only screen and (max-width: 1619px) and (min-width: 1441px) {
-  .left-box{
+  .phoneContactScreen{
     display: none;
   }
-  .form{
-    margin-left: 30%;
-    max-width: 700px;
-  }
-  .message-place {
-    grid-column: 1 / 3;
-}
 }
 
 
 @media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .messageLink{
+    font-size: 1.4vw;
+  }
 .first-row{
   margin-right: -10px;
 }
 nav a{
   padding: 10px 66px;
 }
-.background-part{
-  grid-template-columns: 1fr 5fr 1fr;
-}
-.left-box{
+.phoneContactScreen{
   display: none;
 }
-.form{
-  margin-left: 30%;
-  max-width: 700px;
-}
-.message-place {
-  grid-column: 1 / 3;
-}
-.typing-ani{
-  font-size: 86px;
-  
-}
+
 
 
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1075px) {
+  .messageLink{
+    font-size: 1.4vw;
+  }
+
   .ABO{
     font-size: 80px;
   }
@@ -1026,30 +1097,38 @@ nav a{
     margin-left: 10px;
     margin-right:10px
   }
-  .typing-ani{
-    font-size: 86px;
-    
+
+  .phoneContactScreen{
+    display: none;
   }
-  
-  .background-part{
-    grid-template-columns: 1fr 5fr 1fr;
-  }
+
   .first-row{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  .form{
-    margin-left: 19%;
-    max-width: 700px;
-  }
-  .message-place {
-    grid-column: 1 / 3;
-}
+
+
 }
 
 @media only screen and (max-width: 1074px) and (min-width: 1001px) {
+  .messageLink{
+    font-size: 1.6vw;
+  }
+  .title_proj{
+    font-size: 2.5vw;
+  }
+  .desc_proj{
+    font-size: 1.5vw;
+  }
+  .lang_proj{
+    font-size: 1.5vw;
+  }
+  .date_cr{
+    font-size: 1.5vw;
+  }
+  .cer_click{
+    font-size: 1.5vw;
+  }
+ 
   .ABO{
     font-size: 70px;
   }
@@ -1076,27 +1155,37 @@ nav a{
     
   }
   
-  .background-part{
-    grid-template-columns: 1fr 5fr 1fr;
-  }
+
   .first-row{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  .form{
-    margin-left: 15%;
-    max-width: 700px;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+.phoneContactScreen{
+  display: none;
 }
 }
 
 
 
 @media only screen and (max-width: 1000px) and (min-width: 951px) {
+  .messageLink{
+    font-size: 1.6vw;
+  }
+  
+  .title_proj{
+    font-size: 2.5vw;
+  }
+  .desc_proj{
+    font-size: 1.5vw;
+  }
+  .lang_proj{
+    font-size: 1.5vw;
+  }
+  .date_cr{
+    font-size: 1.5vw;
+  }
+  .cer_click{
+    font-size: 1.5vw;
+  }
   .ABO{
     font-size: 58px;
   }
@@ -1116,30 +1205,71 @@ nav a{
     width: 170px;
     height: 170px;
   }
-  .typing-ani{
-    font-size: 86px;
-    
-  }
-  
-  .background-part{
-    grid-template-columns: 1fr 5fr 1fr;
-  }
+
+
   .first-row{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  .form{
-    margin-left: 24%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+
+
+  .pycon{
+    font-size: 7vw;
+}
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
+.phoneContactScreen{
+  display: none;
 }
 }
 
 
 @media only screen and (max-width: 950px) and (min-width: 901px) {
+ 
+  .messageLink{
+    font-size: 1.6vw;
+  }
+  .title_proj{
+    font-size: 2.5vw;
+  }
+  .desc_proj{
+    font-size: 1.5vw;
+  }
+  .lang_proj{
+    font-size: 1.5vw;
+  }
+  .date_cr{
+    font-size: 1.5vw;
+  }
+  .cer_click{
+    font-size: 1.5vw;
+  }
   .first-row{
     display: none;
   }
@@ -1161,32 +1291,72 @@ nav a{
   .space-for-self{
     display: none;
   }
-  .typing-ani{
-    font-size: 86px;
-    
-  }
+
   
-  .left-box{
-    display: none;
-  }
-  .form{
-    margin-left: 24%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+
+  .pycon{
+    font-size: 7vw;
 }
-  
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
+.phoneContactScreen{
+  display: none;
+}
 }
 @media only screen and (max-width: 900px) and (min-width: 801px) {
+
+  .messageLink{
+    font-size: 1.7vw;
+  }
+  .title_proj{
+    font-size: 2.5vw;
+  }
+  .desc_proj{
+    font-size: 1.5vw;
+  }
+  .lang_proj{
+    font-size: 1.5vw;
+  }
+  .date_cr{
+    font-size: 1.5vw;
+  }
+  .cer_click{
+    font-size: 1.5vw;
+  }
   nav a{
     padding: 10px 54px;
   }
   .first-row{
     display: none;
   }
-  .background-part{
-    grid-template-columns: 1fr 13fr 1fr;
-  }
+
   .ABO{
     display: none;
   }
@@ -1226,10 +1396,7 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 76px;
-    
-  }
+
   
   outline-box{
     display: none;
@@ -1237,40 +1404,74 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 24%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
+}
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
 }
   
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-    padding-left: 10%;
-  }
-  .home-title{
-    grid-column: 1/4;
-  }
+.phoneContactScreen{
+  display: none;
+}
   
 }
 
 
 
 @media only screen and (max-width: 800px) and (min-width: 751px) {
+  .messageLink{
+    font-size: 1.7vw;
+  }
+ 
+  .title_proj{
+    font-size: 2.5vw;
+  }
+  .desc_proj{
+    font-size: 1.5vw;
+  }
+  .lang_proj{
+    font-size: 1.5vw;
+  }
+  .date_cr{
+    font-size: 1.5vw;
+  }
+  .cer_click{
+    font-size: 1.5vw;
+  }
   nav a{
     padding: 10px 54px;
   }
   .first-row{
     display: none;
   }
-  .background-part{
-    grid-template-columns: 1fr 13fr 1fr;
-  }
+
   .ABO{
     display: none;
   }
@@ -1310,10 +1511,7 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 76px;
-    
-  }
+
   
   outline-box{
     display: none;
@@ -1321,40 +1519,79 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 20%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
 }
-  
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-    padding-left: 10%;
-  }
-  .home-title{
-    grid-column: 1/4;
-  }
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
+.phoneContactScreen{
+  display: none;
+}
+
 }
 
 
-
+@media only screen and (max-width: 768px){ .navigation{
+  display: none;
+}}
 
 @media only screen and (max-width: 750px) and (min-width: 701px) {
+  .navigation{
+    display: none;
+  }
+  .messageLink{
+    font-size: 1.7vw;
+  }
+
+  .title_proj{
+    font-size: 2.5vw;
+  }
+  .desc_proj{
+    font-size: 1.5vw;
+  }
+  .lang_proj{
+    font-size: 1.5vw;
+  }
+  .date_cr{
+    font-size: 1.5vw;
+  }
+  .cer_click{
+    font-size: 1.5vw;
+  }
   nav a{
     padding: 10px 54px;
   }
   .first-row{
     display: none;
   }
-  .background-part{
-    grid-template-columns: 1fr 13fr 1fr;
-  }
+
   .ABO{
     display: none;
   }
@@ -1394,10 +1631,7 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 66px;
-    
-  }
+
   
   outline-box{
     display: none;
@@ -1405,24 +1639,44 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 16%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
 }
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
+.phoneContactScreen{
+  display: none;
+}
+
   
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-  }
-  .home-title{
-    grid-column: 1/4;
-  }
+
   
   
 }
@@ -1430,6 +1684,25 @@ nav a{
 
 
 @media only screen and (max-width: 700px) and (min-width: 651px) {
+  .messageLink{
+    font-size: 1.9vw;
+  }
+
+  .title_proj{
+    font-size: 2.7vw;
+  }
+  .desc_proj{
+    font-size: 1.7vw;
+  }
+  .lang_proj{
+    font-size: 1.7vw;
+  }
+  .date_cr{
+    font-size: 1.7vw;
+  }
+  .cer_click{
+    font-size: 1.7vw;
+  }
   .navigation{
     display: none;
   }
@@ -1478,10 +1751,7 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 66px;
-    
-  }
+
   
   outline-box{
     display: none;
@@ -1489,24 +1759,43 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 15%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+
+  .pycon{
+    font-size: 7vw;
 }
-  
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-  }
-  .home-title{
-    grid-column: 1/4;
-  }
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
+.phoneContactScreen{
+  display: none;
+}
+
   
 }
 
@@ -1515,15 +1804,32 @@ nav a{
 
 
 @media only screen and (max-width: 650px) and (min-width: 601px) {
+  .messageLink{
+    font-size: 2.2vw;
+  }
+ 
+  .title_proj{
+    font-size: 2.7vw;
+  }
+  .desc_proj{
+    font-size: 1.7vw;
+  }
+  .lang_proj{
+    font-size: 1.7vw;
+  }
+  .date_cr{
+    font-size: 1.7vw;
+  }
+  .cer_click{
+    font-size: 1.7vw;
+  }
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon{
+    padding: 20px;
+  }
   .navigation{
     display: none;
   }
-  .first-row{
-    width: 100%;
-    margin-right: -37%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .ABO{
     display: none;
   }
@@ -1563,9 +1869,7 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 60px;
-  }
+
   
   outline-box{
     display: none;
@@ -1573,39 +1877,117 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
+
   
-  .form{
-    margin-left: 15%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+
+  .pycon{
+    font-size: 7vw;
 }
-  
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-  }
-  .home-title{
-    grid-column: 1/4;
-  }
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
+.phoneContactScreen{
+  display: none;
+}
 }
 
 
 
 
 @media only screen and (max-width: 600px) and (min-width: 551px) {
+  .firstbox{
+    grid-column: 1/3;
+  }
+  .secondbox{
+    grid-column: 1/3;
+  }
+  .thirdbox{
+    grid-column: 1/3;
+  }
+  .fourthbox{
+    grid-column: 1/3;
+  }
+  .form{
+    display: none;
+    
+  }
+  .form1{
+    align-self: start;
+  }
+
+.pageTitle{
+  font-size: 4vw;
+}
+.name { 
+  width: 30vw;
+}
+.email {
+  width: 30vw;
+}
+.message {
+  width: 30vw;
+}
+.submit {
+  width: 18vw;
+}
+.submit:hover {
+  width: 22vw;
+}
+.messageLink{
+  font-size: 2.5vw;
+}
+  .insidecontainer{
+  
+    grid-column: 3/7;
+  }
+  .title_proj{
+    font-size: 2.9vw;
+  }
+  .desc_proj{
+    font-size: 2vw;
+  }
+  .lang_proj{
+    font-size: 2vw;
+  }
+  .date_cr{
+    font-size: 2vw;
+  }
+  .cer_click{
+    font-size: 2vw;
+  }
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon{
+    padding: 15px;
+  }
   .navigation{
     display: none;
   }
-  .first-row{
-    width: 100%;
-    margin-right: -37%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+ 
   .ABO{
     display: none;
   }
@@ -1645,34 +2027,45 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 60px;
-  }
+
   
   outline-box{
     display: none;
   }
-  .box-of-location{
-    display: none;
-  }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 7%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
+}
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
 }
   
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-  }
-  .home-title{
-    grid-column: 1/4;
-  }
+ 
 }
 
 
@@ -1680,16 +2073,75 @@ nav a{
 
 
 @media only screen and (max-width: 550px) and (min-width: 501px) {
+  .firstbox{
+    grid-column: 1/3;
+  }
+  .secondbox{
+    grid-column: 1/3;
+  }
+  .thirdbox{
+    grid-column: 1/3;
+  }
+  .fourthbox{
+    grid-column: 1/3;
+  }
+  .form{
+    display: none;
+    
+  }
+  .form1{
+    align-self: start;
+  }
+
+.pageTitle{
+  font-size: 4vw;
+}
+.name { 
+  width: 30vw;
+}
+.email {
+  width: 30vw;
+}
+.message {
+  width: 30vw;
+}
+.submit {
+  width: 18vw;
+}
+.submit:hover {
+  width: 22vw;
+}
+  .messageLink{
+    font-size: 2.5vw;
+  }
+  .insidecontainer{
+   
+    grid-column: 3/7;
+  }
+  .title_proj{
+    font-size: 2.9vw;
+  }
+  .desc_proj{
+    font-size: 2vw;
+  }
+  .lang_proj{
+    font-size: 2vw;
+  }
+  .date_cr{
+    font-size: 2vw;
+  }
+  .cer_click{
+    font-size: 2vw;
+  }
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon{
+    padding: 15px;
+  }
+
 
   .navigation{
     display: none;
   }
-  .first-row{
-    width: 100%;
-    margin-right: -13%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+ 
   .ABO{
     display: none;
   }
@@ -1729,9 +2181,7 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 60px;
-  }
+
   .rectangle-under0,.rectangle-under,.rectangle-under1,.rectangle-under2{
     display: none;
   }
@@ -1741,21 +2191,38 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 2%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
 }
-  
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-  }
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
   
 }
 
@@ -1766,15 +2233,75 @@ nav a{
 
 
 @media only screen and (max-width: 500px) and (min-width: 451px){
+  .firstbox{
+    grid-column: 1/3;
+  }
+  .secondbox{
+    grid-column: 1/3;
+  }
+  .thirdbox{
+    grid-column: 1/3;
+  }
+  .fourthbox{
+    grid-column: 1/3;
+  }
+  .form{
+    display: none;
+    
+  }
+  .form1{
+    align-self: start;
+  }
+
+.pageTitle{
+  font-size: 4vw;
+}
+.name { 
+  width: 30vw;
+}
+.email {
+  width: 30vw;
+}
+.message {
+  width: 30vw;
+}
+.submit {
+  width: 18vw;
+}
+.submit:hover {
+  width: 22vw;
+}
+  .messageLink{
+    font-size: 2.7vw;
+  }
+  .insidecontainer{
+  
+    grid-column: 3/7;
+  }
+
+  .title_proj{
+    font-size: 2.9vw;
+  }
+  .desc_proj{
+    font-size: 2vw;
+  }
+  .lang_proj{
+    font-size: 2vw;
+  }
+  .date_cr{
+    font-size: 2vw;
+  }
+  .cer_click{
+    font-size: 2vw;
+  }
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon{
+    padding: 15px;
+  }
+
   .navigation{
     display: none;
   }
-  .first-row{
-    width: 100%;
-    margin-right: 3%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .ABO{
     display: none;
   }
@@ -1814,9 +2341,7 @@ nav a{
     margin-top: 100px;
     font-size: 20px;
   }
-  .typing-ani{
-    font-size: 60px;
-  }
+
   
   outline-box{
     display: none;
@@ -1824,38 +2349,109 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .html-icon{
-    margin-right: 50%;
-  }
-  .form{
-    margin-left: 1%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
 }
-  
-  .home-desc{
-    grid-column: 1/4;
-    padding: 5%;
-  }
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
 }
 
 
 
 @media only screen and (max-width:450px) and (min-width:391px) {
+  .firstbox{
+    grid-column: 1/3;
+  }
+  .secondbox{
+    grid-column: 1/3;
+  }
+  .thirdbox{
+    grid-column: 1/3;
+  }
+  .fourthbox{
+    grid-column: 1/3;
+  }
+  .form{
+    display: none;
+    
+  }
+  .form1{
+    align-self: start;
+  }
+
+.pageTitle{
+  font-size: 4vw;
+}
+.name { 
+  width: 30vw;
+}
+.email {
+  width: 30vw;
+}
+.message {
+  width: 30vw;
+}
+.submit {
+  width: 18vw;
+}
+.submit:hover {
+  width: 22vw;
+}
+  .messageLink{
+    font-size: 2.9vw;
+  }
+  .insidecontainer{
+   
+    grid-column: 3/7;
+  }
+
+  .title_proj{
+    font-size: 3.4vw;
+  }
+  .desc_proj{
+    font-size: 2.3vw;
+  }
+  .lang_proj{
+    font-size: 2.3vw;
+  }
+  .date_cr{
+    font-size: 2.3vw;
+  }
+  .cer_click{
+    font-size: 2.3vw;
+  }
+ 
   .navigation{
     display: none;
   }
-  .first-row{
-    width: 100%;
-    margin-right: 3%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .ABO{
     display: none;
   }
@@ -1894,9 +2490,7 @@ nav a{
     justify-self: center;
     margin-top: 100px;
   }
-  .typing-ani{
-    font-size: 40px;
-  }
+
  
   outline-box{
     display: none;
@@ -1904,15 +2498,37 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 0%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
+}
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
 }
   
 }
@@ -1921,15 +2537,72 @@ nav a{
 
 
 @media only screen and (max-width:390px) {
+  .firstbox{
+    grid-column: 1/3;
+  }
+  .secondbox{
+    grid-column: 1/3;
+  }
+  .thirdbox{
+    grid-column: 1/3;
+  }
+  .fourthbox{
+    grid-column: 1/3;
+  }
+  .form{
+    display: none;
+    
+  }
+  .form1{
+    align-self: start;
+  }
+
+.pageTitle{
+  font-size: 4vw;
+}
+.name { 
+  width: 30vw;
+}
+.email {
+  width: 30vw;
+}
+.message {
+  width: 30vw;
+}
+.submit {
+  width: 18vw;
+}
+.submit:hover {
+  width: 22vw;
+}
+  .messageLink{
+    font-size: 3vw;
+  }
+  .insidecontainer{
+    
+    grid-column: 3/7;
+  }
+
+  .title_proj{
+    font-size: 3.4vw;
+  }
+  .desc_proj{
+    font-size: 2.3vw;
+  }
+  .lang_proj{
+    font-size: 2.3vw;
+  }
+  .date_cr{
+    font-size: 2.3vw;
+  }
+  .cer_click{
+    font-size: 2.3vw;
+  }
+ 
   .navigation{
     display: none;
   }
-  .first-row{
-    width: 100%;
-    margin-right: 17%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .ABO{
     display: none;
   }
@@ -1979,20 +2652,36 @@ nav a{
   .box-of-location{
     display: none;
   }
-  .left-box{
-    display: none;
-  }
-  
-  .form{
-    margin-left: 0%;
-  }
-  .message-place {
-    grid-column: 1 / 3;
+  .pycon{
+    font-size: 7vw;
 }
-  .home-title{
-    font-size: 54px;
-  }
-  .home-desc{
-    font-size: 17px;
-  }
+  .htmlcon{
+    font-size: 7vw;
+}
+.csscon{
+  font-size: 7vw;
+}
+.javascon{
+  font-size: 7vw;
+}
+.djangocon{
+  width: 10vw;
+  height: 10vw;
+}
+.javacon{
+  width: 10vw;
+  height: 10vw;
+}
+.sqlcon{
+  width: 10vw;
+  height: 10vw;
+}
+.springcon{
+  width: 8vw;
+  height: 8vw;
+}
+.rustcon{
+  width: 8vw;
+  height: 8vw;
+}
 }

@@ -11,59 +11,22 @@
 </head>
 <body>
  <header>
-    <div class = "container">
+
         <nav class = "navigation">
 
                 <a href="#">HOME</a>
                 <a href="#About">ABOUT</a>
-                <a href="#Work">WORK</a>
-                <a href="#Contact">CONTACT</a>    
-            <div id="indicator"></div>
+                <a id = "workanchor" href="#Work">SKILLS</a>
+                <a href = "#Projects">PROJECTS</a>   
+                <a href="#Contact">CONTACT</a>
+                
+        
 
         </nav>
-        
-    </div>
-    <div class = "first-row">
-        <ul class = "words_name">
-            <li>
-              <div class = "word-name">K</div>
-            </li>
-            <li>
-              <div class = "word-name">E</div>
-            </li>
-            <li>
-              <div class = "word-name">V</div>
-            </li>
-            <li>
-              <div class = "word-name">I</div>
-            </li>
-            <li>
-              <div class = "word-name">N</div>
-            </li>
-            <li>
-              <div class = "word-name"></div>
-            </li>
-            <li>
-              <div class = "word-name">R</div>
-            </li>
-            <li>
-              <div class = "word-name">A</div>
-            </li>
-            <li>
-              <div class = "word-name">M</div>
-            </li>
-            <li>
-              <div class = "word-name">O</div>
-            </li>
-            <li>
-              <div class = "word-name">S</div>
-            </li>
-          </ul>
-    </div>  
  </header>
  
 <div class = "background-part" id = "Home">
-    <h2 class = "home-title">Hi, I'm Kevin</h2>
+    <h2 class = "home-title">Hi, I'm Kevin Ramos</h2>
     <p class="home-desc">Currently a student at Base Camp Coding Academy</p>
 </div>
 <div class = "white-space" id = "About">
@@ -93,69 +56,98 @@
 
 <div class = "work-screen" id = "Work">
 
-  <div class = "sub-for-work"><p>My work</p></div>
-  <div class = "typing-ani">
-    <p class = "work-desc">My <span class = "auto-type"></span></p>
+  
+  <div class = "typing-ani" id = "anitex">
+    <p class = "work-desc" id = "workdescid">My skills</p>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typed = new Typed(".auto-type", {
-      strings: ["Skills","Projects",],
-      typeSpeed: 210,
-      backSpeed: 150,
-      loop: true
 
-    })
-  </script>
 
    
-  <a class = "pycon" href="https://replit.com/@KevinRamos9/Unit-Project-1#main.py" target="_blank"><ion-icon  name="logo-python"></ion-icon></a>
-  <a class = "htmlcon" href="https://kevin18ramos.github.io/forkliftcompany/" target="_blank"><ion-icon  name="logo-html5"></ion-icon></a>
-  <a class = "csscon" href="https://kevin18ramos.github.io/forkliftcompany/" target="_blank"><ion-icon  name="logo-css3"></ion-icon></a>
-  <ion-icon class = "javascon" name="logo-javascript"></ion-icon>
-  <a class = "djangocon" href="https://github.com/kevin18ramos/MessagingApplication" target="_blank"><img  src="Images/icons8-django-100.png"></a>
-  <img class = "javacon" src="Images/icons8-java-96.png">
+  <a class = "pycon" id = "pycon" href="#Projects" ><ion-icon  name="logo-python"></ion-icon></a>
+  <a class = "htmlcon" href="#Projects" ><ion-icon  name="logo-html5"></ion-icon></a>
+  <a class = "csscon" href="#Projects" ><ion-icon  name="logo-css3"></ion-icon></a>
+  <a class = "javascon"  href="#Projects" ><ion-icon name="logo-javascript"></ion-icon></a>
+  <img class = "djangocon" src="Images/icons8-django-100.png">
+  <img class = "javacon"  src="Images/icons8-java-96.png">
   <img class = "sqlcon" src="Images/icons8-sql-75.png">
   <img class = "springcon" src="Images/icons8-leaf-52.png">
+  <img  class = "rustcon" src="Images/icons8-rust-96.png">
 
-  <a class = "carcon" href="https://replit.com/@KevinRamos9/Unit-Project-1#main.py" target="_blank"><ion-icon class = "cario"  name="car-outline"></ion-icon></a>
-  <a class = "marcuscon" href="https://kevin18ramos.github.io/forkliftcompany/" target="_blank"><ion-icon  name= "construct-outline"></ion-icon></a>
-  <a class = "messagecon" href="https://github.com/kevin18ramos/MessagingApplication" target="_blank"><ion-icon class = "msgicon" name="mail-unread-outline"></ion-icon></a>
+
 </div>
 
+<div class = "projects-screen" id = "Projects">
+  
+  <p class = "work-desc1" id = "workdescid1">My projects</p>
 
-<div class = "contact-screen" id = "Contact">
-  <div class = "left-box">
-    <div class = "box-of-location">
-      <div class="Iam">
-
-        <p>I'm located in Water Valley, MS but you could be</p>
-        <b>
-          <div class="innerIam">
-            in Florida<br /> 
-            in California<br />
-            in New York<br />
-            in Texas<br />
-            anywhere.
-            </div>
-        </b>
-        
-        </div>
+  <div class = "insidecontainer">
+    <h2 class = "title_proj" id = "projecttitle">Repli - Django / Python / HTML / CSS</h2>
+    <h2 class = "desc_proj">Repli is a messaging application that I have developed using the Django web framework. It is a full-featured web application that allows users to create a profile, edit their profile information, and send messages to other users. The application utilizes various Django features such as user authentication and authorization, allowing users to securely log in and access their account information. It also includes a feature that allows users to change their profile picture. Additionally, the application has an admin role that allows the admin to delete users and send channel messages.</h2>
+    <h2 class = "lang_proj">Concepts: Django shortcuts import, Django http import, Import of models, Django contrib import, login_required decorator, allowed_users decorator, UserCreationForm, request method handling, authenticate, login, logout.</h2>
+    <div class = "date_repos">
+      <h3 class = "date_cr">Date created: 12/20/22</h3>
+      <a class = "cer_click" href="https://github.com/kevin18ramos/MessagingApplication" target="_blank">Click here for the repository!</a>
     </div>
   </div>
-  <div class = "message-place">
-    <form class = "form" action="https://formsubmit.co/kevin.18ramos04@gmail.com" method="POST" >
-      <div class="pageTitle title"><em class="form-me">Send</em> me a message! </div>
-      <div class="secondaryTitle title">Please fill out this form to contact me.</div>
-      <input type="text" class="name formEntry" placeholder="Name" name = "name" required/>
-      <input type="hidden" name="_next" value="https://kevin18ramos.github.io/portfolio-kevin/thankyou.html">
-      <input type="email" class="email formEntry" placeholder="Email" name = "email" required/>
-      <textarea type = "message" class="message formEntry" placeholder="Message" name = "message" required></textarea>
-      <button type = "submit" class="submit formEntry" >Send</button>
-    </form>
-  </div>  
+  
+
+  <a class = "carcon"  ><ion-icon class = "cario"  name="car-outline"></ion-icon></a>
+  <a class = "marcuscon"><ion-icon  name="cart-outline"></ion-icon></a>
+  <a class = "messagecon" ><ion-icon class = "msgicon" name="mail-unread-outline"></ion-icon></a>
+  <a class = "triviacon" ><ion-icon name="help-circle-outline"></ion-icon></a>
+  <a class = "managecon" ><ion-icon name="shuffle"></ion-icon></a>
+  <!-- href="https://replit.com/@KevinRamos9/Unit-Project-1#main.py" target="_blank" -->
+  <!--  href="https://kevin18ramos.github.io/forkliftcompany/" target="_blank"  -->
+  <!-- href="https://github.com/kevin18ramos/MessagingApplication" target="_blank" -->
+  <!-- href="https://mike469.github.io/Unit-6/" target="_blank" -->
+  <!--  href="https://github.com/kevin18ramos/Task-Assignment-Program-" target="_blank"-->
 
 
+</div>
+
+<div class = "contact-screen" id = "Contact">
+  <p class = "contactdesc" id = "contactdesc">Get in touch</p>
+  <div class = "firstbox">
+    <h1 class = "contactLinkin">LinkedIn</h1>
+    
+    <ion-icon class = "linkincon" name="logo-linkedin"></ion-icon>
+
+  </div>
+  <div class = "secondbox">
+    <h1 class = "contactGithub">Github</h1>
+    <ion-icon class = "githubcon" name="logo-github"></ion-icon>
+  </div>
+  <div class = "thirdbox">
+    <h1 class = "contactGmail">kevin.18ramos04@gmail.com</h1>
+    <img  class = "mailcon" src="Images/icons8-mail-100.png">
+  </div>
+  <div class = "fourthbox">
+    <h1 class = "contactGmail">Resume</h1>
+    <ion-icon class = "resumecon" name="document-outline"></ion-icon>
+  </div>
+ 
+  <form class = "form" action="https://formsubmit.co/kevin.18ramos04@gmail.com" method="POST" >
+    <div class="pageTitle title"><em class="form-me">Send</em> me a message! </div>
+    <input type="text" class="name formEntry" placeholder="Name" name = "name" required/>
+    <input type="hidden" name="_next" value="https://kevin18ramos.github.io/portfolio-kevin/thankyou.html">
+    <input type="email" class="email formEntry" placeholder="Email" name = "email" required/>
+    <textarea type = "message" class="message formEntry" placeholder="Message" name = "message" required></textarea>
+    <button type = "submit" class="submit formEntry" >Send</button>
+  </form>
+  <h1 class = "messageLink">If you prefer not to send me a message, feel free to take a look at my professional resume. It provides an in-depth overview of my skills and experience.</h1>
+
+
+
+</div>
+<div class = "phoneContactScreen">
+  <form class = "form1" action="https://formsubmit.co/kevin.18ramos04@gmail.com" method="POST" >
+    <div class="pageTitle title"><em class="form-me">Send</em> me a message! </div>
+    <input type="text" class="name formEntry" placeholder="Name" name = "name" required/>
+    <input type="hidden" name="_next" value="https://kevin18ramos.github.io/portfolio-kevin/thankyou.html">
+    <input type="email" class="email formEntry" placeholder="Email" name = "email" required/>
+    <textarea type = "message" class="message formEntry" placeholder="Message" name = "message" required></textarea>
+    <button type = "submit" class="submit formEntry" >Send</button>
+  </form>
 </div>
 <div class = "bottom-screen">
   <a class = "LinkIn" href = "https://www.linkedin.com/in/kevin-ramos-60817a242/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
@@ -166,6 +158,9 @@
   <a class = "Resumetext" href = "doc/kevinramosresume.pdf" download="kevinramosresume" >Resume</a>
 </div>
 
+<script src="contact.js"></script>
+<script src="underline.js"></script>
+<script src="shuffle.js"></script>
 <script src="main.js"></script>
 <script>document.querySelector('ion-icon').shadowRoot.childNodes[0].innerText+="path{stroke:black; stroke-width:10})"</script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
