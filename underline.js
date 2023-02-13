@@ -14,6 +14,7 @@ let descOfProject = document.querySelector(".desc_proj")
 let lang_proj = document.querySelector(".lang_proj")
 let date_proj = document.querySelector(".date_cr")
 let cer_click = document.querySelector(".cer_click")
+let work_title = document.querySelector(".work-desc1")
 
 
 
@@ -47,6 +48,8 @@ let elements = [pythonlang, htmlang, csslang, javasccon, djangocon, rustcon];
 
 function removeeverything(elementsicon){
   for (let index = 0; index < elementsicon.length; index++) {
+    work_title.textContent = "My projects";
+    work_title.style.animation = "none";
     const element1 = elementsicon[index];
     element1.style.border = "none";
     element1.style.fontSize = "5vw";
@@ -137,6 +140,21 @@ elementsicon.forEach(function(element) {
 
 //let elements = [pythonlang, htmlang, csslang, javasccon, djangocon, rustcon];
 // let elementsicon = [caricon,marcuscon,messagecon,triviacon,managecon];
+
+elementsicon.forEach(function(element) {
+  element.addEventListener("mouseover", function () {
+    work_title.style.animation = "lights 5s 750ms linear infinite";
+    work_title.textContent = "Click on project";
+    
+    });
+
+  element.addEventListener("mouseout", function () {
+    work_title.textContent = "My projects";
+    work_title.style.animation = "none";
+  })
+
+})
+
 
 elements.forEach(function(element) {
   element.addEventListener("click", function () {

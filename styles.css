@@ -17,11 +17,12 @@ header{
   position: sticky;
   top: 0;
   z-index: 5;
+  height: 100px;
  
 }
 .navigation {
   margin:0 auto;
-  padding-top: 92px;
+  padding-top: 77px;
   height: 29px;
   display: table;
   margin: 0 auto;
@@ -367,6 +368,8 @@ li {
   grid-column: 1/7;
   text-transform: uppercase;
   z-index: 1;
+  transition: .2s;
+ 
 }
 
 .pycon{
@@ -488,14 +491,14 @@ li {
   color:white;
   cursor: pointer;
   transition: .2s;
-  font-size: 5vw;
+  width: 6.3vw;
   padding: 4vh;
   
 }
 
 
 .marcuscon{
-  font-size: 5vw;
+  width: 6.3vw;
   grid-row: 4/5;
   grid-column: 1/2;
   align-self: center;
@@ -507,7 +510,7 @@ li {
   
 }
 .messagecon{
-  font-size: 6vw;
+  width: 6.3vw;
 
   grid-row: 2/3;
   grid-column: 2/3;
@@ -521,7 +524,7 @@ li {
   padding: 4vh;
 }
 .triviacon{
-  font-size: 5vw;
+  width: 6.3vw;
   grid-row: 3/4;
   grid-column: 1/2;
   align-self: center;
@@ -530,9 +533,10 @@ li {
   transition: .2s;
   cursor: pointer;
   padding: 4vh;
+  
 }
 .managecon{
-  font-size: 5vw;
+  width: 6.3vw;
   grid-row: 3/4;
   grid-column: 2/3;
   align-self: center;
@@ -547,12 +551,12 @@ li {
 
 .insidecontainer{
   background: linear-gradient(#09203F , #537895);
-  grid-row: 2/6;
+  grid-row: 2/7;
   grid-column: 4/7;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-right: 3%;
-  height: 50vh;
+  height: 70vh;
   
   margin-bottom: 5%;
   
@@ -568,7 +572,8 @@ li {
   font-size: 2vw;
   margin: 0;
   padding-right: 5%;
-    padding-left: 5%;
+  padding-left: 5%;
+  
 }
 .desc_proj{
   grid-row: 2/3;
@@ -580,6 +585,54 @@ li {
   padding-right: 5%;
     padding-left: 5%;
   font-family: sans-serif;
+  
+  
+}
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
   
 }
 .lang_proj{
@@ -1050,10 +1103,14 @@ li {
   .phoneContactScreen{
     display: none;
   }
+  
 }
 
 
 @media only screen and (max-width: 1440px) and (min-width: 1201px) {
+  .box-inside{
+    width: 600px;
+  }
   .messageLink{
     font-size: 1.4vw;
   }
@@ -1072,6 +1129,9 @@ nav a{
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1075px) {
+  .box-inside{
+    width: 536px;
+  }
   .messageLink{
     font-size: 1.4vw;
   }
@@ -1088,9 +1148,7 @@ nav a{
   .E{
     font-size: 80px;
   }
-  .box-inside{
-    width: 636px;
-  }
+  
   .myself{
     width: 190px;
     height: 190px;
@@ -1142,7 +1200,7 @@ nav a{
     font-size: 70px;
   }
   .box-inside{
-    width: 636px;
+    width: 436px;
   }
   .myself{
     width: 170px;
@@ -1199,7 +1257,7 @@ nav a{
     font-size: 58px;
   }
   .box-inside{
-    width: 636px;
+    width: 436px;
   }
   .myself{
     width: 170px;
@@ -1288,10 +1346,13 @@ nav a{
   .E{
     font-size: 60px;
   }
-  .space-for-self{
-    display: none;
+  .myself{
+    width: 170px;
+    height: 170px;
   }
-
+  .box-inside{
+    width: 436px;
+  }
   
 
   .pycon{
