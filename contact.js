@@ -30,7 +30,7 @@ arrayofBoxes.forEach(function(element) {
             window.open("https://github.com/kevin18ramos", "_blank");
         }
         else if (element == fourthbox){
-            window.open("doc/kevinramosresume.pdf", "_blank");
+            window.open("doc/Resume.pdf", "_blank");
         }
        
       });
