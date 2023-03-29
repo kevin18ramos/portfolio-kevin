@@ -120,7 +120,7 @@ elementsicon.forEach(function(element) {
       element.style.border = "3px solid rgba(255, 255, 255, 1)";
       element.style.borderRadius = "5px";
       element.style.fontSize = "6vw";
-      cer_click.href = "https://mike469.github.io/Unit-6/";
+      cer_click.href = "https://mike469.github.io/JSON-Trivia/";
     }
     else if (element == managecon){
       console.log("works2")
@@ -205,7 +205,7 @@ elements.forEach(function(element) {
       lang_proj.textContent = trivialang;
       date_proj.textContent = triviadate;
       cer_click.textContent = "Click here for a demo!";
-      cer_click.href = "https://mike469.github.io/Unit-6/";
+      cer_click.href = "https://mike469.github.io/JSON-Trivia/";
     }
     
     else if (element == djangocon){
