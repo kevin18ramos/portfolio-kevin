@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         lab4: {
             title: "Lab 4 - RHEL Grep | Piping",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_5/preview"
+            doc: "https://docs.google.com/document/d/1aGW8Pg1qrENRcOFyeAIrcjySLlLvCOHqMX7CSbjtIB8/preview"
         },
         "lab4.2": {
             title: "Lab 4.2 - RHEL Advanced - Grep | Piping",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_6/preview"
+            doc: "https://docs.google.com/document/d/14VxwAXLFFDhrkbIzRiTkpMPM3ocHS-YK542cOn1v5Ho/preview"
         },
         lab5: {
             title: "Lab 5 - MAN & NGINX",
