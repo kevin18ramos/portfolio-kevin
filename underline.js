@@ -149,7 +149,7 @@ elementsicon.forEach(function(element) {
       element.style.borderRadius = "5px";
       element.style.fontSize = "6vw";
       cer_click.textContent = "Click here for the documentation!";
-      cer_click.href = "https://github.com/kevin18ramos/Linux";
+      cer_click.href = "https://kevin18ramos.github.io/portfolio-kevin/Projects/linux";
     }
   });
 });

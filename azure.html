@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="azure.css">
+    <script src="azure.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Ramos</title>
+    <link rel="icon" href="Images/iconmonstr-cat-4.svg">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#">HOME</a>
+            <a href="#About">ABOUT</a>
+            <a id="workanchor" href="#Work">SKILLS</a>
+            <a href="#Projects">PROJECTS</a>
+            <a href="#Contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <aside class="sidebar">
+            <h2>Labs</h2>
+            <button class="lab-btn active" data-lab="lab1">Lab 1</button>
+            <button class="lab-btn" data-lab="lab2">Lab 2</button>
+            <button class="lab-btn" data-lab="lab3">Lab 3</button>
+            <button class="lab-btn" data-lab="lab4">Lab 4</button>
+        </aside>
+
+        <section class="content">
+            <h1 id="lab-title">Lab 1</h1>
+            <p id="lab-description">Content will display here.</p>
+        </section>
+    </main>
+    <script src="azure.js"></script>
+<script>document.querySelector('ion-icon').shadowRoot.childNodes[0].innerText+="path{stroke:black; stroke-width:10})"</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
