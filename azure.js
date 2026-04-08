@@ -2,80 +2,47 @@ document.addEventListener("DOMContentLoaded", function () {
     const labContent = {
         lab1: {
             title: "Lab 1 - LinuxVM & VirtualBox",
-            description: `
-                Setup and configured a Linux VM using VirtualBox.<br><br>
-                <img src="images/lab1.png" alt="Lab 1 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/1uRcX3NEQMPRCeFlIjkE5RQFi97i6v0k7uj0kzhobmdU/preview"
         },
         lab2: {
             title: "Lab 2 - User Group Management & Permissions",
-            description: `
-                Managed users, groups, and file permissions in Linux.<br><br>
-                <img src="images/lab2.png" alt="Lab 2 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_2/preview"
         },
         "lab2.2": {
             title: "Lab 2.2 - User Group Management & Modifying File Permissions",
-            description: `
-                Modified file permissions and group ownership.<br><br>
-                <img src="images/lab2_2.png" alt="Lab 2.2 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_3/preview"
         },
         lab3: {
             title: "Lab 3 - File Management & Essential Tools",
-            description: `
-                Used Linux file management commands and tools.<br><br>
-                <img src="images/lab3.png" alt="Lab 3 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_4/preview"
         },
         lab4: {
             title: "Lab 4 - RHEL Grep | Piping",
-            description: `
-                Practiced grep and piping commands in RHEL.<br><br>
-                <img src="images/lab4.png" alt="Lab 4 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_5/preview"
         },
         "lab4.2": {
             title: "Lab 4.2 - RHEL Advanced - Grep | Piping",
-            description: `
-                Advanced usage of grep and piping techniques.<br><br>
-                <img src="images/lab4_2.png" alt="Lab 4.2 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_6/preview"
         },
         lab5: {
             title: "Lab 5 - MAN & NGINX",
-            description: `
-                Worked with manual pages and NGINX basics.<br><br>
-                <img src="images/lab5.png" alt="Lab 5 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_7/preview"
         },
         lab6: {
             title: "Lab 6 - RHEL Apache & Networking",
-            description: `
-                Configured Apache server and networking basics.<br><br>
-                <img src="images/lab6.png" alt="Lab 6 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_8/preview"
         },
         lab7: {
             title: "Lab 7 - Cron & rSyslog",
-            description: `
-                Scheduled jobs with cron and configured rsyslog.<br><br>
-                <img src="images/lab7.png" alt="Lab 7 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_9/preview"
         },
         lab8: {
             title: "Lab 8 - Apache & Monitoring",
-            description: `
-                Monitored Apache services and system performance.<br><br>
-                <img src="images/lab8.png" alt="Lab 8 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_10/preview"
         },
         lab9: {
             title: "Lab 9 - SMTP + Postfix",
-            description: `
-                Configured SMTP services using Postfix.<br><br>
-                <img src="images/lab9.png" alt="Lab 9 Image" style="max-width:100%;">
-            `
+            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_11/preview"
         }
     };
 
@@ -88,7 +55,15 @@ document.addEventListener("DOMContentLoaded", function () {
             const selectedLab = this.dataset.lab;
 
             labTitle.textContent = labContent[selectedLab].title;
-            labDescription.innerHTML = labContent[selectedLab].description;
+
+            labDescription.innerHTML = `
+                <iframe
+                    src="${labContent[selectedLab].doc}"
+                    width="100%"
+                    height="700px"
+                    style="border:none;">
+                </iframe>
+            `;
 
             buttons.forEach(btn => btn.classList.remove("active"));
             this.classList.add("active");
