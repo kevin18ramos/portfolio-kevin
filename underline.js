@@ -255,7 +255,7 @@ elements.forEach(function(element) {
       lang_proj.textContent = linuxlang;
       date_proj.textContent = linuxdate;
       azurecon.style.fontSize = "6vw";
-      cer_click.textContent = "Click here for the repository!";
+      cer_click.textContent = "Click here for the documentation!";
       cer_click.href = "https://kevin18ramos.github.io/portfolio-kevin/azure.html;
     }
   });
