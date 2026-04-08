@@ -30,19 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         lab6: {
             title: "Lab 6 - RHEL Apache & Networking",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_8/preview"
+            doc: "https://docs.google.com/document/d/1g6A6Z1Mi9RD8_IaWh7DrRt5LOuPOjvKxXPydYVVmHNo/preview"
         },
         lab7: {
             title: "Lab 7 - Cron & rSyslog",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_9/preview"
+            doc: "https://docs.google.com/document/d/1b3Acak5i9_1zudQNPHi2TgmDOFUahSN6fN8uB0r-Nb4/preview"
         },
         lab8: {
             title: "Lab 8 - Apache & Monitoring",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_10/preview"
+            doc: "https://docs.google.com/document/d/1dc0UqZJKVKAttjPLrxSsI9A1Wi8JFvfjLMzY-SP8WbI/preview"
         },
         lab9: {
             title: "Lab 9 - SMTP + Postfix",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_11/preview"
+            doc: "https://docs.google.com/document/d/1Kwe0pCEsqF_54entvsUlC_jM-Pc3m_1JHdVzutmUxBg/preview"
         }
     };
 
