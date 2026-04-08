@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         lab2: {
             title: "Lab 2 - User Group Management & Permissions",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_2/preview"
+            doc: "https://docs.google.com/document/d/1n-GhJFDu9klGab3i26VeHkh7exHnXGk2EgoksgMPHaw/preview"
         },
         "lab2.2": {
             title: "Lab 2.2 - User Group Management & Modifying File Permissions",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_3/preview"
+            doc: "https://docs.google.com/document/d/1Q0tRulw3KsG-DDzUWuWvffkjy8SOAlsdes5_QYUknjU/preview"
         },
         lab3: {
             title: "Lab 3 - File Management & Essential Tools",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_4/preview"
+            doc: "https://docs.google.com/document/d/1BHiVW-hHgG9FrMY-rKAC5ibN4CeIJHQ13Ati5J7Ptyg/preview"
         },
         lab4: {
             title: "Lab 4 - RHEL Grep | Piping",
