@@ -141,7 +141,7 @@ elementsicon.forEach(function(element) {
       cer_click.href = "https://github.com/kevin18ramos/Task-Assignment-Program-";
     }
     else if (element == azurecon){
-      titleOfProject.textContent = "Microsoft Azure - Linux";
+      titleOfProject.textContent = "Microsoft Azure & Google Cloud - Linux";
       descOfProject.textContent =  linuxdesc;
       lang_proj.textContent = linuxlang;
       date_proj.textContent = linuxdate;
@@ -250,7 +250,7 @@ elements.forEach(function(element) {
     else if (element == linuxcon){
       azurecon.style.border = "4.5px solid white";
       azurecon.style.borderRadius = "5px"
-      titleOfProject.textContent = "Microsoft Azure - Linux";
+      titleOfProject.textContent = "Microsoft Azure & Google Cloud - Linux";
       descOfProject.textContent =  linuxdesc;
       lang_proj.textContent = linuxlang;
       date_proj.textContent = linuxdate;
