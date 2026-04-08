@@ -70,3 +70,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.querySelector(".lab-btn.active").click();
