@@ -476,7 +476,6 @@ li {
   width: 4vw;
   height: 4vw;
   grid-row: 5/5;
-  grid-column: 3/6;
   align-self: center;
   justify-self: center;
   color:white;
@@ -2093,7 +2092,7 @@ nav a{
   .cer_click{
     font-size: 2vw;
   }
-  .carcon,.triviacon,.messagecon,.managecon,.marcuscon.azurecon{
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon,.azurecon{
     padding: 15px;
   }
   .navigation{
