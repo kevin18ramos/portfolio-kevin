@@ -141,14 +141,14 @@ elementsicon.forEach(function(element) {
       cer_click.href = "https://github.com/kevin18ramos/Task-Assignment-Program-";
     }
     else if (element == azurecon){
-      azurecon.style.border = "4.5px solid white";
-      azurecon.style.borderRadius = "5px"
       titleOfProject.textContent = "Microsoft Azure - Linux";
       descOfProject.textContent =  linuxdesc;
       lang_proj.textContent = linuxlang;
       date_proj.textContent = linuxdate;
-      azurecon.style.fontSize = "6vw";
-      cer_click.textContent = "Click here for the repository!";
+      element.style.border = "3px solid rgba(255, 255, 255, 1)";
+      element.style.borderRadius = "5px";
+      element.style.fontSize = "6vw";
+      cer_click.textContent = "Click here for the documentation!";
       cer_click.href = "https://github.com/kevin18ramos/Linux";
     }
   });
