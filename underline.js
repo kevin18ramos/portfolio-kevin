@@ -4,6 +4,7 @@ let csslang = document.querySelector(".csscon");
 let javasccon = document.querySelector(".javascon");
 let djangocon = document.querySelector(".djangocon");
 let rustcon = document.querySelector(".rustcon");
+let linuxcon = document.querySelector(".linuxcon");
 let caricon = document.querySelector(".carcon")
 let marcuscon = document.querySelector(".marcuscon")
 let messagecon = document.querySelector(".messagecon")
@@ -41,7 +42,7 @@ let managelang = "Concepts: array, constant, for loop, conditional statements, r
 let managedate = "Date created: 12/15/22"
 ///for loop
 // hover effects here
-let elements = [pythonlang, htmlang, csslang, javasccon, djangocon, rustcon];
+let elements = [pythonlang, htmlang, csslang, javasccon, djangocon, rustcon,linuxcon];
 ///for loop
 
 
@@ -230,11 +231,22 @@ elements.forEach(function(element) {
       cer_click.textContent = "Click here for the repository!";
       cer_click.href = "https://github.com/kevin18ramos/Task-Assignment-Program-";
     }
+    else if (element == linuxcon){
+      managecon.style.border = "4.5px solid white";
+      managecon.style.borderRadius = "5px"
+      titleOfProject.textContent = "Microsoft Azure - Linux";
+      descOfProject.textContent =  managedesc;
+      lang_proj.textContent = managelang;
+      date_proj.textContent = managedate;
+      managecon.style.fontSize = "6vw";
+      cer_click.textContent = "Click here for the repository!";
+      cer_click.href = "https://github.com/kevin18ramos/Linux";
+    }
   });
 });
 
 
-let imgskill = [ "javascon", "djangocon", "rustcon"];
+let imgskill = [ "javascon", "djangocon", "rustcon","linuxcon"];
 
 imgskill.forEach(function(imgClass) {
   const img = document.querySelector(`.${imgClass}`);
