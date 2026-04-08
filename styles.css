@@ -560,7 +560,6 @@ li {
 }
 .azurecon{
   width: 6.3vw;
-  grid-row: 2/4;
   grid-column: 3/3;
   align-self: center;
   justify-self: center;
