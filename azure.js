@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         lab5: {
             title: "Lab 5 - MAN & NGINX",
-            doc: "https://docs.google.com/document/d/YOUR_DOC_ID_7/preview"
+            doc: "https://docs.google.com/document/d/1kY2eOEK1pRBjYj41B2a4md6aFPRPaagmVmxzn83e3EQ/preview"
         },
         lab6: {
             title: "Lab 6 - RHEL Apache & Networking",
