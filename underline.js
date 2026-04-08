@@ -74,7 +74,7 @@ elements.forEach(function(element) {
 
 
 // how the bio changes here
-let elementsicon = [caricon,marcuscon,messagecon,triviacon,managecon];
+let elementsicon = [caricon,marcuscon,messagecon,triviacon,managecon,linuxcon];
 
 
 // click changes info, keeps box
@@ -138,6 +138,17 @@ elementsicon.forEach(function(element) {
       element.style.fontSize = "6vw";
       cer_click.textContent = "Click here for the repository!";
       cer_click.href = "https://github.com/kevin18ramos/Task-Assignment-Program-";
+    }
+    else if (element == linuxcon)
+      managecon.style.border = "4.5px solid white";
+      managecon.style.borderRadius = "5px"
+      titleOfProject.textContent = "Microsoft Azure - Linux";
+      descOfProject.textContent =  linuxdesc;
+      lang_proj.textContent = linuxlang;
+      date_proj.textContent = linuxdate;
+      managecon.style.fontSize = "6vw";
+      cer_click.textContent = "Click here for the repository!";
+      cer_click.href = "https://github.com/kevin18ramos/Linux";
     }
   });
 });
