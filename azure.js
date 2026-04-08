@@ -50,25 +50,34 @@ document.addEventListener("DOMContentLoaded", function () {
     const labTitle = document.getElementById("lab-title");
     const labDescription = document.getElementById("lab-description");
 
+    function loadLab(labKey, clickedButton) {
+        if (!labContent[labKey]) return;
+
+        labTitle.textContent = labContent[labKey].title;
+
+        labDescription.innerHTML = `
+            <iframe
+                src="${labContent[labKey].doc}"
+                width="100%"
+                height="700"
+                style="border:none;">
+            </iframe>
+        `;
+
+        buttons.forEach(btn => btn.classList.remove("active"));
+        if (clickedButton) {
+            clickedButton.classList.add("active");
+        }
+    }
+
     buttons.forEach(button => {
         button.addEventListener("click", function () {
-            const selectedLab = this.dataset.lab;
-
-            labTitle.textContent = labContent[selectedLab].title;
-
-            labDescription.innerHTML = `
-                <iframe
-                    src="${labContent[selectedLab].doc}"
-                    width="100%"
-                    height="700px"
-                    style="border:none;">
-                </iframe>
-            `;
-
-            buttons.forEach(btn => btn.classList.remove("active"));
-            this.classList.add("active");
+            loadLab(this.dataset.lab, this);
         });
     });
-});
 
-document.querySelector(".lab-btn.active").click();
+    const defaultButton = document.querySelector(".lab-btn.active");
+    if (defaultButton) {
+        loadLab(defaultButton.dataset.lab, defaultButton);
+    }
+});
