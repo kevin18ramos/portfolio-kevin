@@ -476,13 +476,13 @@ li {
   width: 4vw;
   height: 4vw;
   grid-row: 5/5;
-  grid-column: 1/6;
+  grid-column: 3/6;
   align-self: center;
   justify-self: center;
   color:white;
   transition: .2s;
   cursor: pointer;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 .pycon:hover,.csscon:hover,.htmlcon:hover,.djangocon:hover,.javascon:hover,.rustcon:hover,.linuxcon:hover{
   margin-bottom: 35px;
@@ -559,10 +559,10 @@ li {
   padding: 4vh;
  
 }
-.linuxcon{
+.azurecon{
   width: 6.3vw;
   grid-row: 2/4;
-  grid-column: 2/3;
+  grid-column: 3/3;
   align-self: center;
   justify-self: center;
   color:white;
@@ -1931,7 +1931,7 @@ nav a{
   .cer_click{
     font-size: 1.7vw;
   }
-  .carcon,.triviacon,.messagecon,.managecon,.marcuscon,.linuxcon{
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon,.azurecon{
     padding: 20px;
   }
   .navigation{
@@ -2093,7 +2093,7 @@ nav a{
   .cer_click{
     font-size: 2vw;
   }
-  .carcon,.triviacon,.messagecon,.managecon,.marcuscon.linuxcon{
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon.azurecon{
     padding: 15px;
   }
   .navigation{
@@ -2259,7 +2259,7 @@ nav a{
   .cer_click{
     font-size: 2vw;
   }
-  .carcon,.triviacon,.messagecon,.managecon,.marcuscon,.linuxcon{
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon,.azurecon{
     padding: 15px;
   }
 
@@ -2434,7 +2434,7 @@ nav a{
   .cer_click{
     font-size: 2vw;
   }
-  .carcon,.triviacon,.messagecon,.managecon,.marcuscon,.linuxcon{
+  .carcon,.triviacon,.messagecon,.managecon,.marcuscon,.azurecon{
     padding: 15px;
   }
 

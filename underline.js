@@ -10,6 +10,7 @@ let marcuscon = document.querySelector(".marcuscon")
 let messagecon = document.querySelector(".messagecon")
 let triviacon = document.querySelector(".triviacon")
 let managecon = document.querySelector(".managecon")
+let azurecon = document.querySelector(".azurecon")
 let titleOfProject = document.getElementById("projecttitle")
 let descOfProject = document.querySelector(".desc_proj")
 let lang_proj = document.querySelector(".lang_proj")
@@ -74,7 +75,7 @@ elements.forEach(function(element) {
 
 
 // how the bio changes here
-let elementsicon = [caricon,marcuscon,messagecon,triviacon,managecon,linuxcon];
+let elementsicon = [caricon,marcuscon,messagecon,triviacon,managecon,azurecon];
 
 
 // click changes info, keeps box
@@ -139,14 +140,14 @@ elementsicon.forEach(function(element) {
       cer_click.textContent = "Click here for the repository!";
       cer_click.href = "https://github.com/kevin18ramos/Task-Assignment-Program-";
     }
-    else if (element == linuxcon)
-      managecon.style.border = "4.5px solid white";
-      managecon.style.borderRadius = "5px"
+    else if (element == azurecon)
+      azurecon.style.border = "4.5px solid white";
+      azurecon.style.borderRadius = "5px"
       titleOfProject.textContent = "Microsoft Azure - Linux";
       descOfProject.textContent =  linuxdesc;
       lang_proj.textContent = linuxlang;
       date_proj.textContent = linuxdate;
-      managecon.style.fontSize = "6vw";
+      azurecon.style.fontSize = "6vw";
       cer_click.textContent = "Click here for the repository!";
       cer_click.href = "https://github.com/kevin18ramos/Linux";
     }
@@ -247,13 +248,13 @@ elements.forEach(function(element) {
       cer_click.href = "https://github.com/kevin18ramos/Task-Assignment-Program-";
     }
     else if (element == linuxcon){
-      managecon.style.border = "4.5px solid white";
-      managecon.style.borderRadius = "5px"
+      azurecon.style.border = "4.5px solid white";
+      azurecon.style.borderRadius = "5px"
       titleOfProject.textContent = "Microsoft Azure - Linux";
       descOfProject.textContent =  linuxdesc;
       lang_proj.textContent = linuxlang;
       date_proj.textContent = linuxdate;
-      managecon.style.fontSize = "6vw";
+      azurecon.style.fontSize = "6vw";
       cer_click.textContent = "Click here for the repository!";
       cer_click.href = "https://github.com/kevin18ramos/Linux";
     }
