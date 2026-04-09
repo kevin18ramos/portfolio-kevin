@@ -42,7 +42,7 @@ let managedesc = "Task Assignment Program is a Rust program that implements a ch
 let managelang = "Concepts: array, constant, for loop, conditional statements, random number generation, string manipulation, struct, associated functions, trait, type alias, macro, array indexing, variable shadowing, ownership, mutability."
 let managedate = "Date created: 12/15/22"
 
-let linuxdesc = "Linux configuration coursework covering VirtualBox setup, user and group management, file permissions, file management, grep and piping, NGINX, Apache, networking, cron, rsyslog, and SMTP/Postfix based on TCC graded Azure labs."
+let linuxdesc = "Linux configuration coursework covering VirtualBox setup, user and group management, file permissions, file management, grep and piping, NGINX, Apache, networking, cron, rsyslog, and SMTP/Postfix."
 let linuxlang = "Concepts: LinuxVM & VirtualBox, user group management, modifying file permissions, file management, essential tools, RHEL shell commands, NGINX, Apache, networking, grep, piping, man pages, cron, rsyslog, SMTP, Postfix, monitoring."
 let linuxdate = "Date created: 04/07/26"
 ///for loop
